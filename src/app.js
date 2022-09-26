@@ -19,9 +19,9 @@ window.onload = function() {
   ];
 
   let excuse;
-  let whoMath = who[Math.floor(Math.random() * 4)];
-  let whatMath = what[Math.floor(Math.random() * 4)];
-  let whenMath = when[Math.floor(Math.random() * 4)];
+  let whoMath = who[Math.floor(Math.random() * who.length)];
+  let whatMath = what[Math.floor(Math.random() * what.length)];
+  let whenMath = when[Math.floor(Math.random() * when.lenght)];
   excuse = whoMath + " " + whatMath + " " + whenMath;
   document.querySelector("#excuse").innerHTML = excuse;
 };
